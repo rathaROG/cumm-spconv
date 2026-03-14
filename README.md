@@ -27,13 +27,13 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 
 ### 1️⃣ [`cumm`](https://github.com/rathaROG/cumm-gpu)
 
-- CPU: https://ratharog.github.io/cumm-spconv/cumm/
-- CUDA 12.8: https://ratharog.github.io/cumm-spconv/cumm-cu128/
+- CPU: [cumm-spconv/cumm/](https://ratharog.github.io/cumm-spconv/cumm/)
+- CUDA 12.8: [cumm-spconv/cumm-cu128/](https://ratharog.github.io/cumm-spconv/cumm-cu128/)
 
 ### 2️⃣ [`spconv`](https://github.com/rathaROG/spconv-gpu) ***TBA SOON!*** 🆕
 
-- CPU: https://ratharog.github.io/cumm-spconv/spconv/
-- CUDA 12.8: https://ratharog.github.io/cumm-spconv/spconv-cu128/
+- CPU: [cumm-spconv/spconv/](https://ratharog.github.io/cumm-spconv/spconv/)
+- CUDA 12.8: [cumm-spconv/spconv-cu128/](https://ratharog.github.io/cumm-spconv/spconv-cu128/)
 
 ## 📝 License
 
