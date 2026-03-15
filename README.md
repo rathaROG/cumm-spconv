@@ -23,6 +23,12 @@ And for CPU-only variants:
 pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv/
 ```
 
+Or mix:
+
+```bash
+pip install cumm spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-spconv/
+```
+
 ## 📇 Indexation
 
 ### 1️⃣ [`cumm`](https://github.com/rathaROG/cumm-gpu)
