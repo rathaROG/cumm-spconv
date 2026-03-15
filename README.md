@@ -31,15 +31,18 @@ pip install cumm spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-
 
 ## 📇 Indexation
 
-### 1️⃣ [`cumm`](https://github.com/rathaROG/cumm-gpu)
+### 🔭 Build scope
 
-- CPU: [cumm-spconv/cumm/](https://ratharog.github.io/cumm-spconv/cumm/)
-- CUDA 12.8: [cumm-spconv/cumm-cu128/](https://ratharog.github.io/cumm-spconv/cumm-cu128/)
+| Wheels | Linux | Windows | macOS |
+|-|-|-|-|
+| [`cumm`](https://ratharog.github.io/cumm-spconv/cumm/) | ✅ | ✅ | ✅ |
+| [`spconv`](https://ratharog.github.io/cumm-spconv/spconv/) | ✅ | ❌ | ❌ |
+| [`cumm-cu128`](https://ratharog.github.io/cumm-spconv/cumm-cu128/) | ✅ | ✅ | ❌ |
+| [`spconv-cu128`](https://ratharog.github.io/cumm-spconv/spconv-cu128/) | ✅ | ✅ | ❌ |
 
-### 2️⃣ [`spconv`](https://github.com/rathaROG/spconv-gpu) ***TBA SOON!*** 🆕
-
-- CPU: [cumm-spconv/spconv/](https://ratharog.github.io/cumm-spconv/spconv/)
-- CUDA 12.8: [cumm-spconv/spconv-cu128/](https://ratharog.github.io/cumm-spconv/spconv-cu128/)
+<sup> - Only for Python **3.11 - 3.14**</sup><br>
+<sup> - No ARM (aarch64) support for ***Linux***</sup><br>
+<sup> - No ARM (ARM64) support for ***Windows***</sup><br>
 
 ## 📝 License
 
