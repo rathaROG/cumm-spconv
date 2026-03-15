@@ -26,7 +26,7 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 Or mix:
 
 ```bash
-pip install cumm spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-spconv/
+pip install cumm cumm-cu128 spconv spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-spconv/
 ```
 
 ## 📇 Indexation
