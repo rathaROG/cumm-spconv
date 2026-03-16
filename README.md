@@ -33,6 +33,8 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 | [`spconv`](https://ratharog.github.io/cumm-spconv/spconv/) | ✅ | ❌ | ❌ |
 | [`cumm-cu128`](https://ratharog.github.io/cumm-spconv/cumm-cu128/) | ✅ | ✅ | ❌ |
 | [`spconv-cu128`](https://ratharog.github.io/cumm-spconv/spconv-cu128/) | ✅ | ✅ | ❌ |
+| [`cumm-cu130`](https://ratharog.github.io/cumm-spconv/cumm-cu130/) | ✅ | ✅ | ❌ |
+| [`spconv-cu130`](https://ratharog.github.io/cumm-spconv/spconv-cu130/) | ✅ | ✅ | ❌ |
 
 <sup> - Only for Python **3.11 - 3.14**</sup><br>
 <sup> - No ARM (aarch64) support for ***Linux***</sup><br>
