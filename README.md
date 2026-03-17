@@ -1,17 +1,21 @@
-# 📦 Prebuilt wheels for `cumm` and `spconv`
+<div align="center">
 
-## 💡 What is this?
-
-This repository provides a [PyPI simple index](https://www.python.org/dev/peps/pep-0503/) of prebuilt wheels for my custom [`cumm`](https://github.com/rathaROG/cumm-gpu) and [`spconv`](https://github.com/rathaROG/spconv-gpu) for easy installation using `pip` from GitHub Pages.
-
-By using this index, you can conveniently install my custom wheels via pip, saving time on local builds and configuration.
-
-## 🧪 Usage
-
+[![cumm-gpu release](https://img.shields.io/github/release/rathaROG/cumm-gpu.svg?logo=github&logoColor=lightgray&label=cumm-gpu)](https://github.com/rathaROG/cumm-gpu/releases)
+[![spconv-gpu release](https://img.shields.io/github/release/rathaROG/spconv-gpu.svg?logo=github&logoColor=lightgray&label=spconv-gpu)](https://github.com/rathaROG/spconv-gpu/releases)
 [![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-gold?logo=pypi&logoColor=deepskyblue)](https://github.com/rathaROG/cumm-spconv)
 [![Python Versions](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue?logo=python&logoColor=white)](https://github.com/rathaROG/cumm-spconv)
 
-### Installation
+# 📦 Prebuilt wheels for `cumm` and `spconv`
+
+💡 This repository provides a [PyPI simple index](https://www.python.org/dev/peps/pep-0503/) of prebuilt wheels for my custom [`cumm`](https://github.com/rathaROG/cumm-gpu) and [`spconv`](https://github.com/rathaROG/spconv-gpu) for easy installation using `pip` from GitHub Pages.
+
+⚡ By using this index, you can conveniently install my custom wheels via pip, saving time on local builds and configuration.
+
+---
+
+</div>
+
+## 💽 Installation
 
 To install a specific wheel from this custom index, use the `--extra-index-url` flag with pip; for example, for CUDA 12.8:
 
@@ -25,12 +29,9 @@ And for CPU-only variants:
 pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv/
 ```
 
-### Recommended version pairings
+## 🌟 Recommended version pairings
 
 To avoid compatibility issues, always use the recommended version pairs of `cumm` and `spconv` as below:
-
-[![cumm-gpu release](https://img.shields.io/github/release/rathaROG/cumm-gpu.svg?logo=github&logoColor=lightgray&label=cumm-gpu)](https://github.com/rathaROG/cumm-gpu/releases)
-[![spconv-gpu release](https://img.shields.io/github/release/rathaROG/spconv-gpu.svg?logo=github&logoColor=lightgray&label=spconv-gpu)](https://github.com/rathaROG/spconv-gpu/releases)
 
 | `cumm` / `cumm-cuxxx` | `spconv` / `spconv-cuxxx` | Supported CUDA Version(s) |
 |-----------------------|---------------------------|---------------------------|
@@ -49,9 +50,7 @@ To avoid compatibility issues, always use the recommended version pairs of `cumm
   pip install cumm-cu128==0.8.3 spconv-cu128==2.3.9 --extra-index-url https://ratharog.github.io/cumm-spconv/
   ```
 
-## 📇 Indexation
-
-### 🔭 Build scope
+## 🔭 Build scope
 
 | Wheels | Linux | Windows | macOS |
 |-|-|-|-|
