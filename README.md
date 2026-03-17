@@ -29,14 +29,21 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 
 To avoid compatibility issues, always use the recommended version pairs of `cumm` and `spconv` as below:
 
-| `cumm` / `cumm-cuxxx` | `spconv` / `spconv-cuxxx` | Supported CUDA Version(s) |
-|-----------------------|---------------------------|--------------------------|
-| `0.8.4` (latest)      | `2.3.10` (coming)         | 12.8, 13.0               |
-| `0.8.3`               | `2.3.9` (latest)          | 12.8                     |
+[![cumm-gpu release](https://img.shields.io/github/release/rathaROG/cumm-gpu.svg?logo=github&logoColor=lightgray&label=cumm-gpu)](https://github.com/rathaROG/cumm-gpu/releases)
+[![spconv-gpu release](https://img.shields.io/github/release/rathaROG/spconv-gpu.svg?logo=github&logoColor=lightgray&label=spconv-gpu)](https://github.com/rathaROG/spconv-gpu/releases)
 
-- If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` release is coming soon, and `cumm` may already be ahead.
+| `cumm` / `cumm-cuxxx` | `spconv` / `spconv-cuxxx` | Supported CUDA Version(s) |
+|-----------------------|---------------------------|---------------------------|
+| `0.8.4` (latest)      | `2.3.10` (latest)         | 12.8, 13.0                |
+| `0.8.3`               | `2.3.9`                   | 12.8                      |
+
+- If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
 - The pairing table is updated as new versions arrive; always check here before upgrading either package to avoid incompatibility.
-- For production or reproducible installs, **explicitly use the recommended version pairs:**  
+- For production or reproducible installs, **explicitly use the recommended version pairs**:  
+
+  ```bash
+  pip install cumm-cu130==0.8.4 spconv-cu130==2.3.10 --extra-index-url https://ratharog.github.io/cumm-spconv/
+  ```
 
   ```bash
   pip install cumm-cu128==0.8.3 spconv-cu128==2.3.9 --extra-index-url https://ratharog.github.io/cumm-spconv/
@@ -55,9 +62,9 @@ To avoid compatibility issues, always use the recommended version pairs of `cumm
 | [`cumm-cu130`](https://ratharog.github.io/cumm-spconv/cumm-cu130/) | ✅ | ✅ | ❌ |
 | [`spconv-cu130`](https://ratharog.github.io/cumm-spconv/spconv-cu130/) | ✅ | ✅ | ❌ |
 
-<sup> - Only for Python **3.11 - 3.14**</sup><br>
-<sup> - No ARM (aarch64) support for ***Linux***</sup><br>
-<sup> - No ARM (ARM64) support for ***Windows***</sup><br>
+<sup> * Only for Python **3.11 - 3.14**</sup><br>
+<sup> * No ARM (aarch64) support for ***Linux***</sup><br>
+<sup> * No ARM (ARM64) support for ***Windows***</sup><br>
 
 ## 📝 License
 
