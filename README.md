@@ -31,6 +31,7 @@ To avoid compatibility issues, always use the recommended version pairs of `cumm
 
 | `cumm` / `cumm-cuxxx` | `spconv` / `spconv-cuxxx` | Supported CUDA Version(s) |
 |-----------------------|---------------------------|---------------------------|
+| `0.8.5` (coming)      | `2.3.11` (coming)         | 12.8, 13.0                |
 | `0.8.4` (latest)      | `2.3.10` (latest)         | 12.8, 13.0                |
 | `0.8.3`               | `2.3.9`                   | 12.8                      |
 
