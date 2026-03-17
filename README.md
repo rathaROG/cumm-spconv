@@ -13,7 +13,7 @@
 
 ## 💽 Installation
 
-To install specific wheel(s), use the `--extra-index-url` flag with `pip install`; for example, for CUDA 12.8:
+To install specific wheel(s), use the `--extra-index-url` flag with `pip install`; for example, for CUDA 13.0:
 
 ```bash
 pip install cumm-cu130 spconv-cu130 --extra-index-url https://ratharog.github.io/cumm-spconv/
