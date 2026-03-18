@@ -27,16 +27,17 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 
 ## 🌟 Recommended version pairings
 
-To avoid compatibility issues, always use the recommended version pairs of `cumm` and `spconv` as below:
+The pairing table is updated as new versions arrive; always check here before upgrading either package to avoid incompatibility. Always use the recommended version pairs of `cumm` and `spconv` as below:
 
-| `cumm` / `cumm-cuxxx` | `spconv` / `spconv-cuxxx` | Supported CUDA Version(s) |
-|-----------------------|---------------------------|---------------------------|
-| `0.8.5` (latest)      | `2.3.11` (latest)         | 12.8, 13.0                |
-| `0.8.4`               | `2.3.10`                  | 12.8, 13.0                |
-| `0.8.3`               | `2.3.9`                   | 12.8                      |
+| Recommended Version Pairs<br>`cumm` ⟵ `spconv` | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build Only) |
+|-|-|-|
+| `0.8.5` (latest) ⟵ `2.3.11` (latest) | `cu128`, `cu130` | 12.x, 13.x |
+| `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.x, 13.x |
+| `0.8.3` ⟵ `2.3.9` | `cu128` | 12.x |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
-- The pairing table is updated as new versions arrive; always check here before upgrading either package to avoid incompatibility.
+- If there is no prebuilt wheels for a specific minor version of CUDA 12.x and 13.x, you can always build from source using the latest versions of [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
+- For CUDA 11.x, you can always build from source using [`cumm-gpu@v0.7.13`](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.13) and the latest [`spconv-gpu@v2.3.11`](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.3.11).
 - For production or reproducible installs, **explicitly use the recommended version pairs**:  
 
   ```bash
