@@ -29,7 +29,7 @@ pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv
 
 The pairing table is updated as new versions arrive; always check here before upgrading either package to avoid incompatibility. Always use the recommended version pairs of `cumm` and `spconv` as below:
 
-| Recommended Version Pairs<br>`cumm` ⟵ `spconv` | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build Only) |
+| Recommended Version Pairs<br>`cumm` ⟵ `spconv` | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
 |-|-|-|
 | `0.8.5` (latest) ⟵ `2.3.11` (latest) | `cu128`, `cu130` | 12.x, 13.x |
 | `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.x, 13.x |
