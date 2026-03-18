@@ -36,8 +36,8 @@ The pairing table is updated as new versions arrive; always check here before up
 | `0.8.3` ⟵ `2.3.9` | `cu128` | 12.x |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
-- If there is no prebuilt wheels for a specific minor version of CUDA 12.x and 13.x, you can always build from source using the latest versions of [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
-- For CUDA 11.x, you can always build from source using [`cumm-gpu@v0.7.13`](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.13) and the latest [`spconv-gpu@v2.3.11`](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.3.11).
+- If there is no prebuilt wheel for a specific minor version of CUDA 12.x and 13.x, you can always build from source using the latest [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
+- For CUDA 11.x, you can always build from source using [cumm-gpu@v0.7.13](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.13) and the latest [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
 - For production or reproducible installs, **explicitly use the recommended version pairs**:  
 
   ```bash
