@@ -9,6 +9,15 @@
 
 ⚡ By using this index, you can conveniently install via `pip install`, saving time on local builds and configuration.
 
+🆕 Highlight in `cumm` [v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) and `spconv` [v2.4.0](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.0):
+
+> - Added [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) for proper NVIDIA GPU architecture handling:
+> 
+>   - Included arches for CUDA 13.0 builds: 
+>     `'7.5;8.0;8.6;8.7;8.8;8.9;9.0;10.0;10.3;11.0;12.0;12.1+PTX'`
+>   - Included arches for CUDA 12.8 builds: 
+>     `'7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.3;11.0;12.0+PTX'`
+
 ---
 
 ## 💽 Installation
@@ -25,13 +34,14 @@ And for CPU-only variants:
 pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv/
 ```
 
-## 🌟 Recommended version pairings
+## 🌟 Recommended version pairings for prebuilt wheels
 
 The pairing table is updated as new versions arrive; always check here before upgrading either package to avoid incompatibility. Always use the recommended version pairs of `cumm` and `spconv` as below:
 
-| Recommended Version Pairs<br>`cumm` ⟵ `spconv` | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
+| Recommended Version Pairs<br>[`cumm`](https://github.com/rathaROG/cumm-gpu/releases) ⟵ [`spconv`](https://github.com/rathaROG/spconv-gpu/releases) | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
 |-|-|-|
-| `0.8.5` (latest) ⟵ `2.3.11` (latest) | `cu128`, `cu130` | 12.x, 13.x |
+| `0.9.0` (latest) ⟵ `2.4.0` (coming) | `cu128`, `cu130` | 12.x, 13.x |
+| `0.8.5` ⟵ `2.3.11` (latest) | `cu128`, `cu130` | 12.x, 13.x |
 | `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.x, 13.x |
 | `0.8.3` ⟵ `2.3.9` | `cu128` | 12.x |
 
