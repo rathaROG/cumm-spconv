@@ -13,10 +13,10 @@
 
 > - Added [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) for proper NVIDIA GPU architecture handling:
 > 
->   - Included arches for CUDA 13.0 builds: 
+>   - Auto detected arches for CUDA 13.0 builds: 
 >     `'7.5;8.0;8.6;8.7;8.8;8.9;9.0;10.0;10.3;11.0;12.0;12.1+PTX'`
->   - Included arches for CUDA 12.8 builds: 
->     `'7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.3;11.0;12.0+PTX'`
+>   - Auto detected arches for CUDA 12.8 builds: 
+>     `'7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.1;12.0+PTX'`
 
 ---
 
