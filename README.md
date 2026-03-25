@@ -22,10 +22,18 @@
 
 ## 💽 Installation
 
-To install specific wheel(s), use the `--extra-index-url` flag with `pip install`; for example, for CUDA 13.0:
+To install specific wheel(s), use the `--extra-index-url` flag with `pip install`.
+
+For CUDA 13.0:
 
 ```bash
 pip install cumm-cu130 spconv-cu130 --extra-index-url https://ratharog.github.io/cumm-spconv/
+```
+
+For CUDA 12.8:
+
+```bash
+pip install cumm-cu128 spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-spconv/
 ```
 
 And for CPU-only variants:
@@ -51,11 +59,11 @@ The pairing table is updated as new versions arrive; always check here before up
 - For production or reproducible installs, **explicitly use the recommended version pairs**:  
 
   ```bash
-  pip install cumm-cu130==0.8.5 spconv-cu130==2.3.11 --extra-index-url https://ratharog.github.io/cumm-spconv/
+  pip install cumm-cu130==0.9.0 spconv-cu130==2.4.0 --extra-index-url https://ratharog.github.io/cumm-spconv/
   ```
 
   ```bash
-  pip install cumm-cu128==0.8.5 spconv-cu128==2.3.11 --extra-index-url https://ratharog.github.io/cumm-spconv/
+  pip install cumm-cu128==0.9.0 spconv-cu128==2.4.0 --extra-index-url https://ratharog.github.io/cumm-spconv/
   ```
 
 ## 🔭 Build scope
