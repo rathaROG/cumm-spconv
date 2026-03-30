@@ -9,8 +9,10 @@
 
 ⚡ By using this index, you can conveniently install via `pip install`, saving time on local builds and configuration.
 
-🆕 Highlight in `cumm` [v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) and `spconv` [v2.4.0](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.0):
+---
 
+> 🆕 Highlight in `cumm` [v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) and `spconv` [v2.4.0](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.0):
+> 
 > - Updated logic to support more arch in default build
 > - Added [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) for proper NVIDIA GPU architecture handling
 > - Arches for CUDA 13.0 builds: 
@@ -58,8 +60,11 @@ The pairing table is updated as new versions arrive; always check here before up
 | `0.7.14` (pre-release) ⟵ `2.4.1` (coming) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
-- If there is no prebuilt wheel for a specific minor version of CUDA 12.x and 13.x, you can always build from source using the latest [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
-- For CUDA 11.x, you can always build from source using [cumm-gpu@v0.7.13](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.13) and the latest [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
+
+- If there is no prebuilt wheel available for a specific minor version of CUDA, you can always build from source:
+  - For CUDA 12.6+, use the latest [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
+  - For CUDA 11.0-12.6, use [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) and the latest [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
+
 - For production or reproducible installs, **explicitly use the recommended version pairs**:  
 
   ```bash
@@ -70,18 +75,27 @@ The pairing table is updated as new versions arrive; always check here before up
   pip install cumm-cu128==0.9.0 spconv-cu128==2.4.0 --extra-index-url https://ratharog.github.io/cumm-spconv/
   ```
 
+> ### **Notes**:
+> - [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) also supports CUDA 12.6; however, the prebuilt `cumm-cu126` and `spconv-cu126` wheels are based on the latest versions.
+> - Both [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) and [cumm-gpu@v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) (and later) already have [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) integrated for proper NVIDIA GPU architecture handling.
+
 ## 🔭 Build scope
 
-| Wheels | Linux | Windows | macOS |
-|-|-|-|-|
-| [`cumm`](https://ratharog.github.io/cumm-spconv/cumm/) | ✅ | ✅ | ✅ |
-| [`spconv`](https://ratharog.github.io/cumm-spconv/spconv/) | ✅ | ❌ | ❌ |
-| [`cumm-cu128`](https://ratharog.github.io/cumm-spconv/cumm-cu128/) | ✅ | ✅ | ❌ |
-| [`spconv-cu128`](https://ratharog.github.io/cumm-spconv/spconv-cu128/) | ✅ | ✅ | ❌ |
-| [`cumm-cu130`](https://ratharog.github.io/cumm-spconv/cumm-cu130/) | ✅ | ✅ | ❌ |
-| [`spconv-cu130`](https://ratharog.github.io/cumm-spconv/spconv-cu130/) | ✅ | ✅ | ❌ |
+| Wheels | Linux | Windows | macOS | Python Versions |
+|-|-|-|-|-|
+| [`cumm`](https://ratharog.github.io/cumm-spconv/cumm/) | ✅ | ✅ | ✅ | 3.9-3.14 |
+| [`spconv`](https://ratharog.github.io/cumm-spconv/spconv/) | ✅ | ❌ | ❌ | 3.9-3.14 |
+| [`cumm-cu113`](https://ratharog.github.io/cumm-spconv/cumm-cu113/) | ✅ | ❌ | ❌ | 3.9-3.11 |
+| [`spconv-cu113`](https://ratharog.github.io/cumm-spconv/spconv-cu113/) | ✅ | ❌ | ❌ | 3.9-3.11 |
+| [`cumm-cu121`](https://ratharog.github.io/cumm-spconv/cumm-cu121/) | ✅ | ❌ | ❌ | 3.9-3.11 |
+| [`spconv-cu121`](https://ratharog.github.io/cumm-spconv/spconv-cu121/) | ✅ | ❌ | ❌ | 3.9-3.11 |
+| [`cumm-cu126`](https://ratharog.github.io/cumm-spconv/cumm-cu126/) | ✅ | ✅ | ❌ | 3.11-3.14 |
+| [`spconv-cu126`](https://ratharog.github.io/cumm-spconv/spconv-cu126/) | ✅ | ✅ | ❌ | 3.11-3.14 |
+| [`cumm-cu128`](https://ratharog.github.io/cumm-spconv/cumm-cu128/) | ✅ | ✅ | ❌ | 3.11-3.14 |
+| [`spconv-cu128`](https://ratharog.github.io/cumm-spconv/spconv-cu128/) | ✅ | ✅ | ❌ | 3.11-3.14 |
+| [`cumm-cu130`](https://ratharog.github.io/cumm-spconv/cumm-cu130/) | ✅ | ✅ | ❌ | 3.11-3.14 |
+| [`spconv-cu130`](https://ratharog.github.io/cumm-spconv/spconv-cu130/) | ✅ | ✅ | ❌ | 3.11-3.14 |
 
-<sup> * Only for Python **3.11 - 3.14**</sup><br>
 <sup> * No ARM (aarch64) support for ***Linux***</sup><br>
 <sup> * No ARM (ARM64) support for ***Windows***</sup><br>
 
