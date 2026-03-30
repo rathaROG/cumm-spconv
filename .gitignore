@@ -1,3 +1,6 @@
 *.py
 *.whl
 *.txt
+*.cmd
+*.sh
+index_base.html
