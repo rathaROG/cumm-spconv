@@ -24,26 +24,24 @@
 
 ## 💽 Installation
 
-To install specific wheel(s), use the `--index-url` or `-i` with `pip install` to ensure packages are installed exclusively from this index.
-
-Note: `--extra-index-url` is not ideal because pip will prefer packages from PyPI if the package name and version are the same (or higher) on PyPI, which cause it to ignore the custom wheels from this index.
-
-For CUDA 13.0:
+To install specific wheel(s), use the `--extra-index-url` with `pip install` to ensure packages are installed exclusively from this index; for example, for CUDA 13.0:
 
 ```bash
-pip install -i https://ratharog.github.io/cumm-spconv/ cumm-cu130 spconv-cu130
-```
-
-For CUDA 12.8:
-
-```bash
-pip install -i https://ratharog.github.io/cumm-spconv/ cumm-cu128 spconv-cu128
+pip install --extra-index-url https://ratharog.github.io/cumm-spconv/ cumm-cu130 spconv-cu130
 ```
 
 And for CPU-only variants:
 
 ```bash
-pip install -i https://ratharog.github.io/cumm-spconv/ cumm spconv
+pip install --extra-index-url https://ratharog.github.io/cumm-spconv/ cumm spconv
+```
+
+Note: `--extra-index-url` may not provide the right wheels because pip will still install packages from PyPI when the package name and version are the same (or higher) on PyPI, which cause it to ignore the custom wheels from this index. To make sure the correct wheels from this index are installed, you can use `--index-url` or `-i`; for example, for CUDA 13.0:
+
+```bash
+pip install --extra-index-url https://ratharog.github.io/cumm-spconv/ cumm-cu130 spconv-cu130
+pip uninstall -y cumm-cu130 spconv-cu130
+pip install -i https://ratharog.github.io/cumm-spconv/ cumm-cu130 spconv-cu130
 ```
 
 ## 🌟 Recommended version pairings for prebuilt wheels
