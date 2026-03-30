@@ -22,24 +22,26 @@
 
 ## 💽 Installation
 
-To install specific wheel(s), use the `--extra-index-url` flag with `pip install`.
+To install specific wheel(s), use the `--index-url` or `-i` with `pip install` to ensure packages are installed exclusively from this index.
+
+Note: `--extra-index-url` is not ideal because pip will prefer packages from PyPI if the package name and version are the same (or higher) on PyPI, which cause it to ignore the custom wheels from this index.
 
 For CUDA 13.0:
 
 ```bash
-pip install cumm-cu130 spconv-cu130 --extra-index-url https://ratharog.github.io/cumm-spconv/
+pip install -i https://ratharog.github.io/cumm-spconv/ cumm-cu130 spconv-cu130
 ```
 
 For CUDA 12.8:
 
 ```bash
-pip install cumm-cu128 spconv-cu128 --extra-index-url https://ratharog.github.io/cumm-spconv/
+pip install -i https://ratharog.github.io/cumm-spconv/ cumm-cu128 spconv-cu128
 ```
 
 And for CPU-only variants:
 
 ```bash
-pip install cumm spconv --extra-index-url https://ratharog.github.io/cumm-spconv/
+pip install -i https://ratharog.github.io/cumm-spconv/ cumm spconv
 ```
 
 ## 🌟 Recommended version pairings for prebuilt wheels
@@ -48,10 +50,12 @@ The pairing table is updated as new versions arrive; always check here before up
 
 | Recommended Version Pairs<br>[`cumm`](https://github.com/rathaROG/cumm-gpu/releases) ⟵ [`spconv`](https://github.com/rathaROG/spconv-gpu/releases) | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
 |-|-|-|
-| `0.9.0` (latest) ⟵ `2.4.0` (latest) | `cu128`, `cu130` | 12.x, 13.x |
-| `0.8.5` ⟵ `2.3.11` | `cu128`, `cu130` | 12.x, 13.x |
-| `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.x, 13.x |
-| `0.8.3` ⟵ `2.3.9` | `cu128` | 12.x |
+| `0.9.1` (pre-release) ⟵ `2.4.1` (coming) | `cu126`, `cu128`, `cu130` | 12.6+, 13.x |
+| `0.9.0` (latest) ⟵ `2.4.0` (latest) | `cu128`, `cu130` | 12.6+, 13.x |
+| `0.8.5` ⟵ `2.3.11` | `cu128`, `cu130` | 12.6+, 13.x |
+| `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.6+, 13.x |
+| `0.8.3` ⟵ `2.3.9` | `cu128` | 12.6+ |
+| `0.7.14` (pre-release) ⟵ `2.4.1` (coming) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
 - If there is no prebuilt wheel for a specific minor version of CUDA 12.x and 13.x, you can always build from source using the latest [cumm-gpu](https://github.com/rathaROG/cumm-gpu/tags) and [spconv-gpu](https://github.com/rathaROG/spconv-gpu/tags).
