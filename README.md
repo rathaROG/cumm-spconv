@@ -13,12 +13,12 @@
 
 > 🆕 Highlight in `cumm` [v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) and `spconv` [v2.4.0](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.0):
 > 
-> - Updated logic to support more arch in default build
+> - Updated logic to include more GPU architectures in default build
 > - Added [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) for proper NVIDIA GPU architecture handling
-> - Arches for CUDA 13.0 builds: 
->   `'7.5;8.0;8.6;8.7;8.8;8.9;9.0;10.0;10.3;11.0;12.0;12.1+PTX'`
-> - Arches for CUDA 12.8 builds: 
->   `'6.0;6.1;6.2;7.0;7.2;7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.1;12.0+PTX'`
+>   - Arches for CUDA 13.0 builds: 
+>     `'7.5;8.0;8.6;8.7;8.8;8.9;9.0;10.0;10.3;11.0;12.0;12.1+PTX'`
+>   - Arches for CUDA 12.8 builds: 
+>     `'6.0;6.1;6.2;7.0;7.2;7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.1;12.0+PTX'`
 
 ---
 
