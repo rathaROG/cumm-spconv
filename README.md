@@ -3,7 +3,7 @@
 [![cumm-gpu release](https://img.shields.io/github/release/rathaROG/cumm-gpu.svg?logo=github&logoColor=lightgray&label=cumm-gpu)](https://github.com/rathaROG/cumm-gpu/releases)
 [![spconv-gpu release](https://img.shields.io/github/release/rathaROG/spconv-gpu.svg?logo=github&logoColor=lightgray&label=spconv-gpu)](https://github.com/rathaROG/spconv-gpu/releases)
 [![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-gold?logo=pypi&logoColor=deepskyblue)](https://github.com/rathaROG/cumm-spconv)
-[![Python Versions](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue?logo=python&logoColor=white)](https://github.com/rathaROG/cumm-spconv)
+[![Python Versions](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue?logo=python&logoColor=white)](https://github.com/rathaROG/cumm-spconv)
 
 💡 This repository provides a [PyPI simple index](https://www.python.org/dev/peps/pep-0503/) of prebuilt wheels for my custom [`cumm`](https://github.com/rathaROG/cumm-gpu) and [`spconv`](https://github.com/rathaROG/spconv-gpu).
 
@@ -11,14 +11,7 @@
 
 ---
 
-> 🆕 Highlight in `cumm` [v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) and `spconv` [v2.4.0](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.0):
-> 
-> - Updated logic to include more GPU architectures in default build
-> - Added [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) for proper NVIDIA GPU architecture handling
->   - Arches for CUDA 13.0 builds: 
->     `'7.5;8.0;8.6;8.7;8.8;8.9;9.0;10.0;10.3;11.0;12.0;12.1+PTX'`
->   - Arches for CUDA 12.8 builds: 
->     `'6.0;6.1;6.2;7.0;7.2;7.5;8.0;8.6;8.7;8.9;9.0;10.0;10.1;12.0+PTX'`
+> 🆕 The new `cumm` [v0.9.1](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.1) (and [v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14)) and `spconv` [v2.4.1](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.1) now include additional prebuilt wheels for CUDA 11.3 12.1 and 12.6 along with many fixes and enhancements.
 
 ---
 
@@ -50,12 +43,12 @@ The pairing table is updated as new versions arrive; always check here before up
 
 | Recommended Version Pairs<br>[`cumm`](https://github.com/rathaROG/cumm-gpu/releases) ⟵ [`spconv`](https://github.com/rathaROG/spconv-gpu/releases) | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
 |-|-|-|
-| `0.9.1` (pre-release) ⟵ `2.4.1` (coming) | `cu126`, `cu128`, `cu130` | 12.6+, 13.x |
-| `0.9.0` (latest) ⟵ `2.4.0` (latest) | `cu128`, `cu130` | 12.6+, 13.x |
+| `0.9.1` (latest) ⟵ `2.4.1` (coming) | `cu126`, `cu128`, `cu130` | 12.6+, 13.x |
+| `0.9.0` ⟵ `2.4.0` (latest) | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.5` ⟵ `2.3.11` | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.3` ⟵ `2.3.9` | `cu128` | 12.6+ |
-| `0.7.14` (pre-release) ⟵ `2.4.1` (coming) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
+| `0.7.14` ⟵ `2.4.1` (coming) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
 
@@ -74,8 +67,7 @@ The pairing table is updated as new versions arrive; always check here before up
   ```
 
 > ### **Notes**:
-> - [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) also supports CUDA 12.6; however, the prebuilt `cumm-cu126` and `spconv-cu126` wheels are based on the latest versions.
-> - Both [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) and [cumm-gpu@v0.9.0](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.0) (and later) already have [`nvidia-arch`](https://github.com/rathaROG/nvidia-arch) integrated for proper NVIDIA GPU architecture handling.
+> - [cumm-gpu@v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14) also supports CUDA 12.6; however, the prebuilt `cumm-cu126` and `spconv-cu126` wheels are based on the latest versions of [cumm-gpu@v0.9.1](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.1) and [spconv-gpu@v2.4.1](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.1).
 
 ## 🔭 Build scope
 
