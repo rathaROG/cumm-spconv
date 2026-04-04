@@ -43,12 +43,12 @@ The pairing table is updated as new versions arrive; always check here before up
 
 | Recommended Version Pairs<br>[`cumm`](https://github.com/rathaROG/cumm-gpu/releases) ⟵ [`spconv`](https://github.com/rathaROG/spconv-gpu/releases) | Available Prebuilt<br>CUDA Wheels | Supported CUDA Versions<br>(Source Build) |
 |-|-|-|
-| `0.9.1` (latest) ⟵ `2.4.1` (coming) | `cu126`, `cu128`, `cu130` | 12.6+, 13.x |
-| `0.9.0` ⟵ `2.4.0` (latest) | `cu128`, `cu130` | 12.6+, 13.x |
+| `0.9.1` (latest) ⟵ `2.4.1` (latest) | `cu126`, `cu128`, `cu130` | 12.6+, 13.x |
+| `0.9.0` ⟵ `2.4.0` | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.5` ⟵ `2.3.11` | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.4` ⟵ `2.3.10` | `cu128`, `cu130` | 12.6+, 13.x |
 | `0.8.3` ⟵ `2.3.9` | `cu128` | 12.6+ |
-| `0.7.14` ⟵ `2.4.1` (coming) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
+| `0.7.14` ⟵ `2.4.1` (latest) | `cu113`, `cu121` |  11.x, 12.0-12.6 |
 
 - If you install without specifying versions, the versions you downloaded may **not** match the highest recommended pair. This often means a new `spconv` [release](https://github.com/rathaROG/spconv-gpu/releases) is coming soon, and `cumm` [release](https://github.com/rathaROG/cumm-gpu/releases) may already be ahead.
 
