@@ -59,11 +59,11 @@ The pairing table is updated as new versions arrive; always check here before up
 - For production or reproducible installs, **explicitly use the recommended version pairs**:  
 
   ```bash
-  pip install cumm-cu130==0.9.1 spconv-cu130==2.4.1 --extra-index-url https://ratharog.github.io/cumm-spconv/
+  pip install --extra-index-url https://ratharog.github.io/cumm-spconv/ cumm-cu130==0.9.1 spconv-cu130==2.4.1
   ```
 
   ```bash
-  pip install cumm-cu128==0.9.1 spconv-cu128==2.4.1 --extra-index-url https://ratharog.github.io/cumm-spconv/
+  pip install --extra-index-url https://ratharog.github.io/cumm-spconv/ cumm-cu128==0.9.1 spconv-cu128==2.4.1
   ```
 
 > ### **Notes**:
