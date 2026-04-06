@@ -9,15 +9,19 @@
 
 ⚡ By using this index, you can conveniently install via `pip install`, saving time on local builds and configuration.
 
-<img alt="Image" src="https://github.com/user-attachments/assets/25594afd-224d-45d1-9a49-58324a79f6af" />
+<details><summary>&nbsp; 💯 pytest passed ! </summary><br>
 
-## 💽 Installation
+> <img alt="Image" src="https://github.com/user-attachments/assets/25594afd-224d-45d1-9a49-58324a79f6af" />
+
+</details>
 
 ---
 
 > 🆕 The new `cumm` [v0.9.1](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.9.1) (and [v0.7.14](https://github.com/rathaROG/cumm-gpu/releases/tag/v0.7.14)) and `spconv` [v2.4.1](https://github.com/rathaROG/spconv-gpu/releases/tag/v2.4.1) now include additional prebuilt wheels for CUDA 11.3 12.1 and 12.6 along with many fixes and enhancements.
 
 ---
+
+## 💽 Installation
 
 To install specific wheel(s), use the `--extra-index-url` with `pip install` to ensure packages are installed exclusively from this index; for example, for CUDA 13.0:
 
