@@ -11,7 +11,7 @@
 
 <details><summary>&nbsp; 💯 pytest passed ! </summary><br>
 
-> <img alt="Image" src="https://github.com/user-attachments/assets/25594afd-224d-45d1-9a49-58324a79f6af" />
+<img alt="Image" src="https://github.com/user-attachments/assets/25594afd-224d-45d1-9a49-58324a79f6af" />
 
 </details>
 
